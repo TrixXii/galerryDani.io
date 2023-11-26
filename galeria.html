@@ -9,5 +9,20 @@
 <body>
     <h1>Bienvenido a la Galería</h1>
    
+    <script>
+          // Función para leer las cookies
+          function getCookie(name) {
+            var match = document.cookie.match(new RegExp('(^| )' + name + '=([^;]+)'));
+            if (match) return match[2];
+        }
+
+        // Verificar si la cookie de autenticación está presente
+        var autenticado = getCookie("autenticado");
+
+        if (!autenticado) {
+            // Si no está autenticado, redirigir a index.html
+            window.location.href = "index.html";
+        }
+    </script>
 </body>
 </html>
