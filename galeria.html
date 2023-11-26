@@ -4,46 +4,90 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Galería</title>
+    <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body class="colorF">
+    <main id="container-galery">
+        <section id="perfil">
+            <figure>
+                <img src="/img/avatar.svg" alt="" class="avatar">
+                <figcaption class="name"> <b>Daniel Muñoz Abellan</b>
+                    <p>ILUSTRADOR</p>
+                </figcaption>
+            </figure>
+            <nav>
+                <li>
+                    <a href="#">ABOUT</a>
+                </li>
+            </nav>
+            <footer>
+                <i class="fa fa-instagram"></i>
+                <i class="fa fa-envelope"></i>
+                <i class="fa fa-linkedin"></i>
+            </footer>
+        </section>
+        <section id="galeria">
+            <!-- Aquí se agregan las imágenes de la galería -->
+        </section>
+    </main>
+
+   <div class="modal fade" id="imagenModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+            <div class="modal-body">
+                <img src="" id="imagenModalSrc" class="img-fluid" alt="Imagen en popup">
+            </div>
+        </div>
+    </div>
+</div>
+
+
     <script>
         document.addEventListener('DOMContentLoaded', function () {
             // Verificar si la cookie de autenticación está presente
             var hasAuthentication = document.cookie.indexOf('authenticated=true') !== -1;
-    
-            // Si no hay autenticación, redirigir a index.html
             if (!hasAuthentication) {
                 window.location.href = 'index.html';
             }
         });
+
+        fetch('/img/imagenes.json')
+            .then(response => response.json())
+            .then(data => {
+                const galeriaSection = document.getElementById('galeria');
+
+                data.forEach((imagen, index) => {
+                    // Crear un nuevo elemento de imagen para la galería
+                    const imgElement = document.createElement('img');
+                    imgElement.src = imagen.url;
+                    imgElement.alt = 'Imagen de la galería';
+                    imgElement.className = 'card-img-top';
+                    
+                    // Agregar el evento de clic para abrir el modal con la imagen
+                    imgElement.addEventListener('click', function () {
+                        document.getElementById('imagenModalSrc').src = imagen.url;
+                        new bootstrap.Modal(document.getElementById('imagenModal')).show();
+                    });
+
+                    // Crear un nuevo elemento de tarjeta para la galería
+                    const cardElement = document.createElement('div');
+                    cardElement.className = 'card m-3 bg-dark';
+                    cardElement.appendChild(imgElement);
+
+                    // Agregar la tarjeta a la sección de galería
+                    galeriaSection.appendChild(cardElement);
+                });
+                
+            })
+            
+            .catch(error => console.error('Error al cargar imagenes.json', error));
     </script>
-</head>
-<body>
-    <h1>Bienvenido a la Galería</h1>
-   
-    <!-- <script>
-          // Función para establecer una cookie con un tiempo de expiración
-          function setCookie(name, value, days) {
-            var expires = "";
-            if (days) {
-                var date = new Date();
-                date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
-                expires = "; expires=" + date.toUTCString();
-            }
-            document.cookie = name + "=" + value + expires + "; path=/";
-        }
 
-        // Función para leer las cookies
-        function getCookie(name) {
-            var match = document.cookie.match(new RegExp('(^| )' + name + '=([^;]+)'));
-            if (match) return match[2];
-        }
-
-        // Verificar si la cookie de autenticación está presente
-        var autenticado = getCookie("autenticado");
-
-        if (!autenticado) {
-            // Si no está autenticado, redirigir a index.html
-            window.location.href = "index.html";
-        }
-    </script> -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
 </body>
 </html>

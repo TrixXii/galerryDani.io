@@ -1,27 +1,165 @@
 * {
     margin: 0;
     padding: 0;
-  
 }
-.content{
 
+.content {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50% ,-50%);
+    transform: translate(-50%, -50%);
 }
-.inicio{
+
+.inicio {
     width: 250px;
 }
-.tlna{
+
+.tlna {
     margin-top: -100px;
 }
+
+/* Estilos generales */
+#perfil {
+    background-color: #3b1c3c;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+.colorF,
+.card-img-top {
+    background-color: black;
+}
+
+.name {
+    font-size: 20px;
+}
+
+.card-img-top {
+    height: 250px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.avatar {
+    width: 120px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+#galeria {
+    margin: auto;
+}
+
+figcaption {
+    margin-top: 10px;
+}
+
+nav li {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin: 0 5px;
+    transition: background-color 0.3s;
+}
+
+nav a:hover {
+    background-color: #fff;
+    color: #3b1c3c;
+}
+
+footer {
+    margin-top: 20px;
+}
+
+.fa {
+    font-size: 24px;
+    margin: 0 10px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.fa:hover {
+    color: #888;
+}
+
+
+.aaa{
+    height: 100vh;
+}
+
+/* Media Queries */
 @media (min-width: 768px) {
     .inicio {
         width: 350px;
     }
-    .tlna{
+
+    .tlna {
         margin-top: -100px;
+    }
+
+    #container-galery {
+        display: flex;
+    }
+
+    #galeria {
+        height: 100vh;
+        overflow-y: auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+        width: 100%;
+    }
+
+    #galeria::-webkit-scrollbar {
+        width: 0.5em;
+    }
+
+    #galeria::-webkit-scrollbar-thumb {
+        background-color: #3b1c3c;
+    }
+
+    .card:first-child img {
+        height: 300px;
+    }
+
+    .card:first-child {
+        grid-column: span 2;
+    }
+
+    #perfil {
+        height: 100vh;
+        width: 300px;
     }
 }
 
+@media (min-width: 1024px) {
+    .card:first-child img {
+        height: auto;
+    }
+}
+
+@media (min-width: 1440px) {
+    #galeria {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .card-img-top {
+        height: 350px;
+    }
+
+    .card:first-child {
+        grid-column: span 3;
+    }
+
+    #perfil {
+        width: 400px;
+    }
+}
