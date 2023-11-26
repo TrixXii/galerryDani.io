@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+    padding: 0;
+  
+}
+.content{
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% ,-50%);
+}
+.inicio{
+    width: 250px;
+}
+.tlna{
+    margin-top: -100px;
+}
+@media (min-width: 768px) {
+    .inicio {
+        width: 350px;
+    }
+    .tlna{
+        margin-top: -100px;
+    }
+}
+
