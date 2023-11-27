@@ -24,7 +24,7 @@ function mostrarFormularioCorreo() {
 
 
 
-fetch('/img/imagenes.json')
+fetch('./img/imagenes.json')
     .then(response => response.json())
     .then(data => {
         const galeriaSection = document.getElementById('galeria');
