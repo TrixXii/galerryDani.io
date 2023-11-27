@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', function () {
     // Verificar si la cookie de autenticación está presente
     var hasAuthentication = document.cookie.indexOf('authenticated=true') !== -1;
     if (!hasAuthentication) {
-        window.location.href = 'index.html';
+        window.location.href = '../html/index.html';
     }
 });
 
@@ -24,7 +24,7 @@ function mostrarFormularioCorreo() {
 
 
 
-fetch('./img/imagenes.json')
+fetch('../img/imagenes.json')
     .then(response => response.json())
     .then(data => {
         const galeriaSection = document.getElementById('galeria');
@@ -34,7 +34,8 @@ fetch('./img/imagenes.json')
             const imgElement = document.createElement('img');
             imgElement.src = imagen.url;
             imgElement.alt = 'Imagen de la galería';
-            imgElement.className = 'card-img-top';
+            imgElement.className = 'card-img-top ';
+          
             // Establecer el estilo CSS para enfocar en la parte superior de la imagen
             if (index === 2 || index === 3) {
                 imgElement.style.objectPosition = 'center 10%';
@@ -48,7 +49,7 @@ fetch('./img/imagenes.json')
 
             // Crear un nuevo elemento de tarjeta para la galería
             const cardElement = document.createElement('div');
-            cardElement.className = 'card m-3 ';
+            cardElement.className = 'card m-3 animate__animated animate__slideInUp';
 
             cardElement.appendChild(imgElement);
 

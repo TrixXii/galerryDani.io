@@ -1,18 +1,18 @@
 [
-    {"url": "./img/imagen1.jpeg"},
-    {"url": "./img/imagen2.jpeg"},
-    {"url": "./img/imagen3.jpeg"},
-    {"url": "./img/imagen4.jpeg"},
-    {"url": "./img/imagen5.jpeg"},
-    {"url": "./img/imagen6.jpeg"},
-    {"url": "./img/daniel-munoz-tren.jpg"},
-    {"url": "./img/daniel-munoz-arbusto-husojapones.jpg"},
-    {"url": "./img/daniel-munoz-background-danielmunoz.jpg"}, 
-    {"url": "./img/daniel-munoz-bubba.jpg"},
-    {"url": "./img/daniel-munoz-shigoril.jpg"}, 
-    {"url": "./img/daniel-munoz-untitled.jpg"},
-    {"url": "./img/imagen7.jpg"}, 
-    {"url": "./img/imagen8.jpg"},
-    {"url": "./img/imagen9.jpg"}
+    {"url": "../img/imagen1.jpeg"},
+    {"url": "../img/imagen2.jpeg"},
+    {"url": "../img/imagen3.jpeg"},
+    {"url": "../img/imagen4.jpeg"},
+    {"url": "../img/imagen5.jpeg"},
+    {"url": "../img/imagen6.jpeg"},
+    {"url": "../img/daniel-munoz-tren.jpg"},
+    {"url": "../img/daniel-munoz-arbusto-husojapones.jpg"},
+    {"url": "../img/daniel-munoz-background-danielmunoz.jpg"}, 
+    {"url": "../img/daniel-munoz-bubba.jpg"},
+    {"url": "../img/daniel-munoz-shigoril.jpg"}, 
+    {"url": "../img/daniel-munoz-untitled.jpg"},
+    {"url": "../img/imagen7.jpg"}, 
+    {"url": "../img/imagen8.jpg"},
+    {"url": "../img/imagen9.jpg"}
   ]
   
