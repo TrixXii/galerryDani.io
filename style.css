@@ -18,9 +18,10 @@
     margin-top: -100px;
 }
 
+
 /* Estilos generales */
 #perfil {
-    background-color: #3b1c3c;
+    background-color: #000000;
     color: #fff;
     text-align: center;
     padding: 20px;
@@ -28,7 +29,7 @@
 
 .colorF,
 .card-img-top {
-    background-color: black;
+    background-color: #d9d0bf;
 }
 
 .name {
@@ -39,6 +40,7 @@
     height: 250px;
     object-fit: cover;
     border-radius: 5px;
+    
 }
 
 .avatar {
@@ -54,11 +56,15 @@
 figcaption {
     margin-top: 10px;
 }
-
+nav{
+    justify-content: center;
+    display:flex ;
+}
 nav li {
     list-style-type: none;
     padding: 0;
     margin-top: 20px;
+    
 }
 
 nav a {
@@ -87,26 +93,102 @@ footer {
 }
 
 .fa:hover {
-    color: #888;
+    color: #88888862;
 }
 
 
-.aaa{
+.aaa {
     height: 100vh;
 }
+
+#abaut {
+    display: none;
+}
+
+#fecha {
+    background-color: #ada99e;
+    color: #3a3a3a;
+    padding: 6px;
+    margin: 6px;
+    border-radius: 6px;
+    text-align: center;
+}
+
+#trabajos {
+    color: #222745;
+    background-color: #cfc6b5;
+    padding: 16px;
+    width: 100%;
+}
+
+#trabajos article {
+    background-color: #c4bcaf;
+    position: relative;
+    padding: 16px;
+    margin: 16px 0px;
+    border-radius: 16px;
+}
+
+span{
+    color: #797979;
+    font-size: 15px;
+}
+
+#fotoAbout{
+    display: none;
+}
+
+#infoAbout{
+  margin: 16px;
+}
+
+
 
 /* Media Queries */
 @media (min-width: 768px) {
     .inicio {
         width: 350px;
     }
+    nav{
+        display: block;
+        margin-top: 200px;
+    }
+    footer{
+        margin-left: 71px;
+        position: absolute;
+        bottom: 30px;
+        align-items: center;
+    }
+
+    #trabajos{
+        margin-top: 16px;
+        height: 60vh;
+        overflow: auto;
+        border-radius: 5px;
+        width: 95%;
+    }
+
+    #trabajos::-webkit-scrollbar {
+        width: 0.5em;
+    }
+
+    #trabajos::-webkit-scrollbar-thumb {
+        background-color: #000000;
+        border-radius: 5px;
+    }
 
     .tlna {
         margin-top: -100px;
     }
+    
+    #infoAbout{
+        margin-top: 50px;
+    }
 
     #container-galery {
-        display: flex;
+        display: grid;
+        grid-template-columns: 300px 1fr;
+
     }
 
     #galeria {
@@ -123,7 +205,7 @@ footer {
     }
 
     #galeria::-webkit-scrollbar-thumb {
-        background-color: #3b1c3c;
+        background-color: #000000;
     }
 
     .card:first-child img {
@@ -136,13 +218,18 @@ footer {
 
     #perfil {
         height: 100vh;
-        width: 300px;
     }
 }
 
 @media (min-width: 1024px) {
     .card:first-child img {
-        height: auto;
+        height: 350px;
+    }
+    
+    #fecha {
+        position: absolute;
+        right: 10px;
+        top: 5px;
     }
 }
 
@@ -151,15 +238,34 @@ footer {
         grid-template-columns: 1fr 1fr 1fr;
     }
 
+    #trabajos{
+        height: 65vh;
+    }
+
+    .card:first-child img {
+        height: 400px;
+    }
+
     .card-img-top {
         height: 350px;
     }
-
     .card:first-child {
         grid-column: span 3;
     }
-
-    #perfil {
-        width: 400px;
+    #abaut {
+        height: 100vh;
+        display: grid;
+        grid-template-columns: 600px 1fr;
+        gap: 10px;
+        width: 100%;
     }
+
+    #fotoAbout {
+        display: block;
+        margin: 200px 20px;
+        width: 550px;
+        overflow: hidden;
+        object-fit: cover;
+    }
+
 }
