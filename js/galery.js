@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', function () {
     // Verificar si la cookie de autenticación está presente
     var hasAuthentication = document.cookie.indexOf('authenticated=true') !== -1;
     if (!hasAuthentication) {
-        window.location.href = '../html/index.html';
+        window.location.href = 'index.html';
     }
 });
 
@@ -16,7 +16,7 @@ function mostrarAbaut() {
     document.getElementById('abaut').style.display = 'grid';
 }
 
-fetch('../img/imagenes.json')
+fetch('./img/imagenes.json')
     .then(response => response.json())
     .then(data => {
         const galeriaSection = document.getElementById('galeria');

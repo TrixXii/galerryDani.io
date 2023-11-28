@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', function () {
             document.cookie = 'authenticated=true;path=/';
 
             // Redirigir a galeria.html
-            window.location.href = '../html/galeria.html';
+            window.location.href = 'galeria.html';
         } else {
             // Mostrar un mensaje de error o realizar otras acciones si la contraseña no es correcta
             alert('Contraseña incorrecta. Inténtalo de nuevo.');
