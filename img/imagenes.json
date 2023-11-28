@@ -56,7 +56,6 @@
     "url": "./img/15/portada.png",
     "content": [
       {
-        "url": "./img/15/photo1701130332 (2).jpeg",
         "url1": "./img/15/photo1701130332 (1).jpeg",
         "url2": "./img/15/photo1701130332.jpeg"
       }
@@ -76,12 +75,7 @@
     ]
   },
   {
-    "url": "./img/7/daniel-munoz-shigoril.jpg",
-    "content": [
-      {
-        "url1": "./img/7/5.jpg"
-      }
-    ]
+    "url": "./img/7/5.jpg"
   },
   {
     "url": "./img/14/photo1701130332 (8).jpeg",

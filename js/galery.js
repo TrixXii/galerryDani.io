@@ -23,6 +23,7 @@ fetch('./img/imagenes.json')
         const modal = document.getElementById('myModal');
         const modalImage = document.getElementById('modalImage');
         const additionalContent = document.getElementById('additionalContent');
+        const closeIcon = document.getElementById('colse'); // Elemento con el ícono de cierre
 
         data.forEach((imagen, index) => {
             // Crear un nuevo elemento de imagen para la galería
@@ -46,7 +47,7 @@ fetch('./img/imagenes.json')
 
             // Crear un nuevo elemento de tarjeta para la galería
             const cardElement = document.createElement('div');
-            cardElement.className = 'card m-3 animate__animated animate__slideInUp';
+            cardElement.className = 'card m-2 animate__animated animate__slideInUp';
 
             cardElement.addEventListener('click', function () {
                 modal.style.display = 'block';
@@ -79,14 +80,28 @@ fetch('./img/imagenes.json')
 
                         additionalContent.appendChild(contentElement);
                     }
-
                 }
+
+                // Ajusta la posición del scroll a la parte superior del modal
+                document.body.style.overflow = 'hidden'; // Desactiva el scroll del body
+                modal.scrollTop = 0; // Ajusta la posición del scroll del modal
             });
+
+ // Cierra el modal al hacer clic en el ícono de cierre
+ closeIcon.addEventListener('click', function () {
+    modal.style.display = 'none';
+
+    // Restaura el scroll del body
+    document.body.style.overflow = 'auto';
+});
 
             // Cierra el modal al hacer clic fuera de él
             window.addEventListener('click', function (event) {
                 if (event.target === modal) {
                     modal.style.display = 'none';
+
+                    // Restaura el scroll del body
+                    document.body.style.overflow = 'auto';
                 }
             });
 
