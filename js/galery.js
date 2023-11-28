@@ -16,8 +16,6 @@ function mostrarAbaut() {
     document.getElementById('abaut').style.display = 'grid';
 }
 
-
-
 fetch('../img/imagenes.json')
     .then(response => response.json())
     .then(data => {
@@ -33,14 +31,18 @@ fetch('../img/imagenes.json')
             imgElement.alt = 'Imagen de la galería';
             imgElement.className = 'card-img-top ';
             // Establecer el estilo CSS para enfocar en la parte superior de la imagen
-            if (index === 5 || index === 6 || index === 8) {
+            if (index === 1 || index === 10) {
                 imgElement.style.objectPosition = 'center 10%';
             }
-
-         
-            
-            
-            
+            if (index === 7 || index === 9 ) {
+                imgElement.style.objectPosition = '100% 100%';
+            }
+            if (index == 6) {
+                imgElement.style.objectPosition = 'center';
+            }
+            if (index === 2) {
+                imgElement.style.objectPosition = '0% 100%';
+            }
 
             // Crear un nuevo elemento de tarjeta para la galería
             const cardElement = document.createElement('div');
@@ -77,7 +79,7 @@ fetch('../img/imagenes.json')
 
                         additionalContent.appendChild(contentElement);
                     }
-                    
+
                 }
             });
 

@@ -9,90 +9,12 @@
     ]
   },
   {
-    "url": "../img/1/piedra_obsidiana.jpg",
+    "url": "../img/5/imagen4.jpeg",
     "content": [
       {
-        "url1": "../img/1/piedra_arenisca.jpg",
-        "url2": "../img/1/piedra_caliza.jpg",
-        "url3": "../img/1/piedra_cuarcita.jpg",
-        "url4": "../img/1/piedra_Gneis.jpg",
-        "url5": "../img/1/piedra_mármol.jpg",
-        "url6": "../img/1/piedra_pizarral.jpg",
-        "url7": "../img/1/piedra_Serpentinita.jpg",
-        "url8": "../img/1/piedra_travertino.jpg"
-      }
-    ]
-  },
-  {
-    "url": "../img/2/arbusto_husojapones.jpg",
-    "content": [
-      {
-        "url1": "../img/2/árbol_alamoblanco.jpg",
-        "url2": "../img/2/árbol_alcornoque.jpg",
-        "url3": "../img/2/árbol_arcedeazúcar.jpg",
-        "url4": "../img/2/árbol_drago.jpg",
-        "url5": "../img/2/árbol_sequoia.jpg",
-        "url6": "../img/2/arbusto_buddleia.jpg",
-        "url7": "../img/2/arbusto_Calocephalus-brownii.jpg",
-        "url8": "../img/2/arbusto_lavanda.jpg"
-      }
-    ]
-  },
-  {
-    "url": "../img/3/joan_fennek.jpg",
-    "content": [
-      {
-        "url1": "../img/3/compo.jpg",
-        "url2": "../img/3/thumbnails.jpg",
-        "url3": "../img/3/ZBrush Movie1.mp4"
-      }
-    ]
-  },
-  {
-    "url": "../img/4/IMG_20230709_200155.jpg",
-    "content": [
-      {
-        "url1": "../img/4/IMG_20230714_171253.jpg",
-        "url2": "../img/4/IMG_20230714_171302.jpg",
-        "url3": "../img/4/IMG_20230714_171321.jpg",
-        "url4": "../img/4/IMG_20230714_171346.jpg",
-        "url5": "../img/4/IMG_20230714_171357.jpg",
-        "url6": "../img/4/IMG_20230714_171546.jpg",
-        "url7": "../img/4/IMG_20230714_171929.jpg"
-      }
-    ]
-  },
-  {
-    "url": "../img/5/imagen3.jpeg",
-    "content": [
-      {
-        "url1": "../img/5/3.jpg"
-      }
-    ]
-  },
-  {
-    "url": "../img/6/imagen4.jpeg",
-    "content": [
-      {
-        "url1": "../img/6/4.jpg"
-      }
-    ]
-  },
-  {
-    "url": "../img/7/daniel-munoz-shigoril.jpg",
-    "content": [
-      {
-        "url1": "../img/7/5.jpg"
-      }
-    ]
-  },
-  {
-    "url": "../img/8/BIRD-WITH-BOAT.jpg",
-    "content": [
-      {
-        "url1": "../img/8/SINGING-BIRD.jpg",
-        "url2": "../img/8/CRANE-WITH-SAKURAPIANO.jpg",
-        "url3": "../img/8/space_man.jpg"
+        "url1": "../img/5/4.jpg",
+        "url2": "../img/5/imagen3.jpeg",
+        "url3": "../img/5/3.jpg"
       }
     ]
   },
@@ -106,10 +28,10 @@
     ]
   },
   {
-    "url": "../img/10/idea_color&light.jpg",
+    "url": "../img/10/oswald_fondo_1.jpg",
     "content": [
       {
-        "url1": "../img/10/oswald_fondo_1.jpg"
+        "url1": "../img/10/idea_color&light.jpg"
       }
     ]
   },
@@ -131,6 +53,37 @@
     ]
   },
   {
+    "url": "../img/15/portada.png",
+    "content": [
+      {
+        "url": "../img/15/photo1701130332 (2).jpeg",
+        "url1": "../img/15/photo1701130332 (1).jpeg",
+        "url2": "../img/15/photo1701130332.jpeg"
+      }
+    ]
+  },
+  {
+    "url": "../img/16/photo1701130332.jpeg"
+  },
+  {
+    "url": "../img/3/joan_fennek.jpg",
+    "content": [
+      {
+        "url1": "../img/3/compo.jpg",
+        "url2": "../img/3/thumbnails.jpg",
+        "url3": "../img/3/ZBrush Movie1.mp4"
+      }
+    ]
+  },
+  {
+    "url": "../img/7/daniel-munoz-shigoril.jpg",
+    "content": [
+      {
+        "url1": "../img/7/5.jpg"
+      }
+    ]
+  },
+  {
     "url": "../img/14/photo1701130332 (8).jpeg",
     "content": [
       {
@@ -142,15 +95,6 @@
         "url6": "../img/14/photo1701130332 (9).jpeg",
         "url7": "../img/14/photo1701130332 (10).jpeg",
         "url8": "../img/14/photo1701130332 (11).jpeg"
-      }
-    ]
-  },
-  {
-    "url": "../img/15/photo1701130332 (2).jpeg",
-    "content": [
-      {
-        "url1": "../img/15/photo1701130332 (1).jpeg",
-        "url2": "../img/15/photo1701130332.jpeg"
       }
     ]
   }
