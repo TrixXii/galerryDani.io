@@ -246,8 +246,7 @@ span {
         height: 300px;
     }
 
-    .card:first-child,
-    .card:last-child {
+    .card:first-child {
         grid-column: span 2;
     }
 
