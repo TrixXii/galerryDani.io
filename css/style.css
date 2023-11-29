@@ -173,11 +173,6 @@ span {
 /* Media Queries */
 @media (min-width: 768px) {
     #colse{
-        text-align: end;
-        display: block;
-        font-size: 20px;
-    }
-    #colse{
 
         display: none;
 
@@ -200,7 +195,7 @@ span {
 
     #trabajos {
         margin-top: 16px;
-        height: 55vh;
+        height: 50vh;
         overflow: auto;
         border-radius: 5px;
         width: 95%;
@@ -220,7 +215,7 @@ span {
     }
 
     #infoAbout {
-        margin-top: 50px;
+        margin-top: 20px;
     }
 
     #container-galery {
